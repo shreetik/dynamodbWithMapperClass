@@ -1,10 +1,9 @@
 package com.amazonaws.lambda.entities;
 
-public class request {
+public class Request {
 
 	private String action;
-	private String status;
-	private String msg;
+	private String region;
 	private String empId;
 	private String empName;
 	private String designation;
@@ -16,22 +15,6 @@ public class request {
 
 	public void setAction(String action) {
 		this.action = action;
-	}
-
-	public String getStatus() {
-		return status;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
-	}
-
-	public String getMsg() {
-		return msg;
-	}
-
-	public void setMsg(String msg) {
-		this.msg = msg;
 	}
 
 	public String getEmpId() {
@@ -66,9 +49,16 @@ public class request {
 		this.email = email;
 	}
 
+	public String getRegion() {
+		return region;
+	}
+
+	public void setRegion(String region) {
+		this.region = region;
+	}
 	@Override
 	public String toString() {
-		return "request [action=" + action + ", status=" + status + ", msg=" + msg + ", empId=" + empId + ", empName="
+		return "request [action=" + action + ",  empId=" + empId + ", empName="
 				+ empName + ", designation=" + designation + ", email=" + email + "]";
 	}
 

@@ -4,6 +4,14 @@ public class Response {
 
 	private String statu;
 	private String msg;
+	private Class<Employee> emp;
+	
+	public Class<Employee> getEmp() {
+		return emp;
+	}
+	public void setEmp(Class<Employee> emp) {
+		this.emp = emp;
+	}
 	public String getStatu() {
 		return statu;
 	}

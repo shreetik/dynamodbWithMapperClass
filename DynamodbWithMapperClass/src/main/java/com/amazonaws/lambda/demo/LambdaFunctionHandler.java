@@ -33,6 +33,7 @@ public class LambdaFunctionHandler implements RequestHandler<Request, Response> 
 		} catch (Exception e) {
 			response.setStatu("400");
 			response.setMsg("error in handleRequest");
+			response.setEmp(null);
 			return response;
 		}
        
